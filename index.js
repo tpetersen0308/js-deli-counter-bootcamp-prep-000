@@ -22,11 +22,10 @@ function currentLine(katzDeliLine) {
   }
   else {
     str = str + ":"
-    var i
-    for(i = 1; i < katzDeliLine.length; i++) {
+    for(var i = 1; i < katzDeliLine.length; i++) {
       str = `${str} ${i}. ${katzDeliLine[i - 1]},`
     }
-    str = `${str} ${i}. ${katzDeliLine[i]}`
+    str = `${str} ${i}. ${katzDeliLine[i - 1]}`
     return str
   }
 }
