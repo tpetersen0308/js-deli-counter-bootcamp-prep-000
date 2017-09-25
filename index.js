@@ -4,7 +4,7 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  if (katzDeliLine.length() === 0) {
+  if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!"
   }
   else {
@@ -17,11 +17,11 @@ function nowServing(katzDeliLine) {
 function currentLine(katzDeliLine) {
   var str = "The line is currently: "
 
-  if(katzDeliLine.length() === 0) {
+  if(katzDeliLine.length === 0) {
     return str + "empty."
   }
   else {
-    for(var i = 0; i < katzDeliLine.length(); i++) {
+    for(var i = 0; i < katzDeliLine.length; i++) {
       str = str + (i + 1) + katzDeliLine[i]
     }
   }
