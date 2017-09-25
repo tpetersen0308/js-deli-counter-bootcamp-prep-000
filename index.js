@@ -21,8 +21,9 @@ function currentLine(katzDeliLine) {
     return str + " empty."
   }
   else {
+    str = str + ":"
     for(var i = 0; i < katzDeliLine.length; i++) {
-      str = `${str}: ${i + 1}. ${katzDeliLine[i]},`
+      str = `${str} ${i + 1}. ${katzDeliLine[i]},`
     }
     return str
   }
