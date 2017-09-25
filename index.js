@@ -1,4 +1,4 @@
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name)
-  return katzDeliLine.length
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
